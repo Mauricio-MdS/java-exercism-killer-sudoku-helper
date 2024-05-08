@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -26,7 +25,6 @@ public class KillerSudokuHelperTest {
     }
 
     @Test
-    @Disabled("Remove to run test")
     @DisplayName("Cage with sum 45 contains all digits 1:9")
     public void testCageWithSum45ContainsAllDigits() {
         List<List<Integer>> expected = List.of(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9));
@@ -34,7 +32,6 @@ public class KillerSudokuHelperTest {
     }
 
     @Test
-    @Disabled("Remove to run test")
     @DisplayName("Cage with only 1 possible combination")
     public void testCageWithOnlyOnePossibleCombination() {
         List<List<Integer>> expected = List.of(List.of(1, 2, 4));
@@ -42,7 +39,6 @@ public class KillerSudokuHelperTest {
     }
 
     @Test
-    @Disabled("Remove to run test")
     @DisplayName("Cage with several combinations")
     public void testCageWithSeveralCombinations() {
         List<List<Integer>> expected = List.of(
@@ -55,7 +51,6 @@ public class KillerSudokuHelperTest {
     }
 
     @Test
-    @Disabled("Remove to run test")
     @DisplayName("Cage with several combinations that is restricted")
     public void testCageWithSeveralCombinationsThatIsRestricted() {
         List<List<Integer>> expected = List.of(
